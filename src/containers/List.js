@@ -7,7 +7,7 @@ const List = ({search}) => {
 
   useEffect(async () => {
     try {
-      setRes(await fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${search}`).then(response => response.json()).then(data => data.Search));
+      setRes(await fetch(`https://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${search}`).then(response => response.json()).then(data => data.Search));
     } catch (error) {
       console.error(error);
     }
