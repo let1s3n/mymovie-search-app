@@ -29,7 +29,7 @@ module.exports={
     htmlPlugin,
     new MiniCssExtractPlugin(),
     new webpack.DefinePlugin({
-      "process.env.API_KEY": JSON.stringify(process.env.API_KEY),
+      'process.env': JSON.stringify(process.env),
     }),
 
   ],
