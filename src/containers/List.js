@@ -8,6 +8,7 @@ const List = ({search}) => {
   useEffect(async () => {
     try {
       console.log(process.env.REACT_APP_API_KEY);
+      console.log(process.env.API_KEY);
       setRes(await fetch(`https://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${search}`).then(response => response.json()).then(data => data.Search));
     } catch (error) {
       console.error(error);
