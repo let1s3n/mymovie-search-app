@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const port = process.env.PORT || 8080;
 const app = express();
+console.log(process.env.API_KEY);
 if (process.env.NODE_ENV == 'development')
 require('dotenv').config({ silent: true });
 app.use(express.static(__dirname + '/dist'));
