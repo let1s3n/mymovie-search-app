@@ -5,6 +5,7 @@ var app = express();
 
 app.use(express.static(path.join(__dirname, 'dist')));
 app.set('port', process.env.PORT || 8080);
+console.log(process.env.API_KEY);
 
 var server = app.listen(app.get('port'), function() {
   console.log('listening on port ', server.address().port);
