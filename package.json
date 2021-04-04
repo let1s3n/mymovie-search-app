@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve",
+    "dev": "webpack serve --config webpack.config.js",
     "start": "node server.js",
-    "postinstall": "npm run build",
-    "build": "webpack --config webpack.prod.js"
+    "heroku-postbuild": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
