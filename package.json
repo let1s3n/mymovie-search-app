@@ -1,0 +1,33 @@
+{
+  "name": "react-peliculas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "production": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.0.0-beta3",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^7.0.2",
+    "html-webpack-plugin": "^5.3.1",
+    "react-bootstrap": "^1.5.2",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.0",
+    "mini-css-extract-plugin": "^1.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
