@@ -6,9 +6,9 @@ const htmlPlugin = new HtmlWebpackPlugin({
   filename:'index.html'
 })
 
-const Dotenv = require('dotenv-webpack');
+
 module.exports={
-  mode:'development',
+  mode:'production',
   module:{
     rules:[
       {
@@ -27,7 +27,9 @@ module.exports={
   plugins:[
     htmlPlugin,
     new MiniCssExtractPlugin(),
-    new Dotenv()
+    new webpack.DefinePlugin({
+      "process.env": {},
+    }),
 
   ],
   output:{

@@ -7,7 +7,7 @@
     "dev": "webpack serve",
     "start": "node server.js",
     "postinstall": "npm run build",
-    "build": "webpack --mode production"
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
